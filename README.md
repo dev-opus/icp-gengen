@@ -1,6 +1,6 @@
 # icp-gengen
 
-icp-gengen is an AI powered image-to-text context generator. This decentralized application lets users upload pictures and get human-like context from google's gemini-1.5-flash AI model, pin the uploaded image to the IPFS cloud (via) pinata and store the generated context and pinned image url on the ICP blockchain. Users can also browse through other users generated contexts on the **explore** page.
+**icp-gengen** is an AI-powered image-to-text context generator. This decentralized application lets users upload pictures and get human-like context from google's **gemini-1.5-flash** AI model, pin the uploaded image to the IPFS cloud via **Pinata** and store the generated context and pinned image url on the ICP blockchain. Users can also browse other user-generated contexts on the **explore** page.
 
 ## Functionalities
 
