@@ -1,0 +1,37 @@
+{
+  "canisters": {
+    "internet_identity": {
+      "type": "custom",
+      "shrink": false,
+      "candid": "https://github.com/dfinity/internet-identity/releases/download/release-2023-09-08/internet_identity.did",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/download/release-2023-09-08/internet_identity_dev.wasm.gz"
+    },
+
+    "frontend": {
+      "dependencies": ["backend"],
+      "frontend": {
+        "entrypoint": "./index.html"
+      },
+      "source": ["src/assets", "dist/"],
+      "type": "assets",
+      "gzip": true
+    },
+    "backend": {
+      "type": "custom",
+      "candid_gen": "http",
+      "main": "backend/index.ts",
+      "candid": "backend/index.did",
+      "build": "npx azle backend",
+      "wasm": ".azle/backend/backend.wasm",
+      "gzip": true
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

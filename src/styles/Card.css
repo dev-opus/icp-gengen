@@ -1,0 +1,18 @@
+.mystock {
+  margin-top: 20px;
+}
+
+.img {
+  display: block;
+  height: 240px;
+
+  max-width: 400px;
+  min-width: 320px;
+
+  max-height: auto;
+  object-fit: cover;
+}
+
+.card {
+  max-width: 400px;
+}

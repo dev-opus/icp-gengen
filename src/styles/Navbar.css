@@ -1,0 +1,13 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #000;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
