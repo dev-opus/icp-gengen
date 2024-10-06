@@ -85,6 +85,10 @@ function App() {
 
     const inlineData = await fileToGenerativePart(file);
 
+    if (aiResponse) {
+      setAiResponse('');
+    }
+
     setFile(file);
     setImage(url);
     setInlineData(inlineData);
