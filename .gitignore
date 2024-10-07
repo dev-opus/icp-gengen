@@ -28,3 +28,5 @@ dist-ssr
 
 src/declarations/
 dist/
+
+.env
