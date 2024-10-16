@@ -25,9 +25,9 @@
 To begin, clone this repository to your machine and create a `.env` file in the root of the application and populate it with the following variables:
 
 ```
-VITE_GEMINI_API_KEY: your google gemini api key
-VITE_PINATA_GATEWAY: your pinata gateway baseurl
-VITE_PINATA_JWT_KEY: your pinata JWT string
+CANISTER_GEMINI_API_KEY: your google gemini api key
+CANISTER_PINATA_GATEWAY: your pinata gateway baseurl
+CANISTER_PINATA_JWT_KEY: your pinata JWT string
 ```
 
 Now, run the following commands as they appear below to complete the installation and setup process:
@@ -36,6 +36,8 @@ Now, run the following commands as they appear below to complete the installatio
 - `npm run dfx:start` to initialize the local ICP blockchain
 - `npm run dfx:deploy` to deploy the canisters (smart contracts) on the local blockchain
 - `npm run dfx:generate` to generate **declaration** files neccessary for the frontend to communicate with the backend.
+
+**NB**: **If on the first run of `npm run dfx:deploy`  you get an error, consider running `npm run dfx:generate` and then re-run the `npm run dfx:deploy` command again.**
 
 To interact with the application via your browser, scroll through your terminal output and click on the link with asteriks (\*) arround it as shown below:
 
