@@ -12,7 +12,7 @@ import {
   pinImageToPinata,
 } from './utils/';
 
-const genAi = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
+const genAi = new GoogleGenerativeAI(import.meta.env.CANISTER_GEMINI_API_KEY);
 const model = genAi.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
 function App() {

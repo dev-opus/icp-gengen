@@ -9,14 +9,14 @@ export async function pinImageToPinata(file) {
     const res = await fetch('https://api.pinata.cloud/pinning/pinFileToIPFS', {
       method: 'post',
       headers: {
-        Authorization: `Bearer ${import.meta.env.VITE_PINATA_JWT_KEY}`,
+        Authorization: `Bearer ${import.meta.env.CANISTER_PINATA_JWT_KEY}`,
       },
       body: formData,
     });
 
     const { IpfsHash } = await res.json();
     return (
-      'https://' + import.meta.env.VITE_PINATA_GATEWAY + '/ipfs/' + IpfsHash
+      'https://' + import.meta.env.CANISTER_PINATA_GATEWAY + '/ipfs/' + IpfsHash
     );
   } catch (error) {
     console.log(error);
