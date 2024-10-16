@@ -1,7 +1,7 @@
 import { HttpAgent, Actor } from '@dfinity/agent';
 import { idlFactory as gengenIDL } from '../declarations/backend';
 
-const GENGEN_CANISTER_ID = 'bw4dl-smaaa-aaaaa-qaacq-cai';
+const GENGEN_CANISTER_ID = import.meta.env.CANISTER_ID_BACKEND;
 
 export async function getGengenCanister() {
   return await getCannister(GENGEN_CANISTER_ID, gengenIDL);

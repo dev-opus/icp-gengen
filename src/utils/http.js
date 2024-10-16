@@ -1,4 +1,5 @@
-const baseurl = 'http://bkyz2-fmaaa-aaaaa-qaaaq-cai.localhost:4943';
+const baseurl =
+  'http://' + import.meta.env.CANISTER_ID_BACKEND + '.localhost:4943';
 
 export const httpClient = {
   /**
