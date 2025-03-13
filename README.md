@@ -17,6 +17,7 @@
 - **Frontend**: React.js (Vite)
 - **Image Pinning**: Pinata/IPFS
 - **Local ICP Blockchain Runner**: dfx
+- **LLM Model**: `gemini-1.5-flash`
 
 ## Installation and Setup
 
